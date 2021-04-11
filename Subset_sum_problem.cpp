@@ -25,14 +25,6 @@ bool is_Subset_sum(int Sum,int arr[],int n)
             }
         }
     }
-    for(int i=0;i<=n;i++)
-    {
-        for (int j = 0; j <=Sum; j++)
-        {
-            cout<<t[i][j]<<" ";
-        }
-        cout<<endl;
-    }
     return t[n][Sum];
 }
 int main()
