@@ -7,7 +7,7 @@ bool is_Subset_sum(int Sum,int arr[],int n)
     {
         t[i][0]=1;
     }
-    for (int j = 0; j <=Sum; j++)
+    for (int j = 1; j <=Sum; j++)
     {
         t[0][j]=0;
     }
@@ -17,7 +17,7 @@ bool is_Subset_sum(int Sum,int arr[],int n)
         {
             if(arr[i-1]<=j)
             {
-                t[i][j]=t[i-1][j-arr[i-1]]||t[i-1][j];
+                t[i][j]=t[i-1][j-arr[i-1]] || t[i-1][j];
             }
             else
             {
