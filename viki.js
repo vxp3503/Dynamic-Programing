@@ -195,8 +195,136 @@
     
 //     document.body.style.backgroundColor = `rgb(${e.offsetX},${e.offsetY},${e.offsetY})`
 // })
+// fetchBtn=document.getElementById("fetchBtn");
+// fetchBtn.addEventListener('click',buttonclickhandler)
 
+// function buttonclickhandler() {
+//     const xhr=new XMLHttpRequest();
+//     xhr.open('GET','viki.txt', true);
+//     xhr.onprogress=function () {
+//         console.log('on progress')
+        
+//     }
+//     xhr.onreadystatechange=function () {
+//         console.log(this.readyState)
+//     }
+//     xhr.onload=function () {
+//         if(this.status===200)
+//         console.log(this.responseText)
+//         else
+//         console.log("Error Occured")
+//     }
+//     xhr.send();
+//     console.log("we are done")
+// }
+
+
+// const students=[
+//     {name: "vikrant", subject: "javascript"},
+//     {name: "viki", subject: "Machine-Learning"}
+// ]
+
+
+// function enrollstudent(student) {
+//     setTimeout(function(){
+//         students.push(student);
+//         console.log("Enrolled");
+//     },1000);
+// }
+
+// function getstudent() {
+//     setTimeout(function(){
+//         let str="";
+//         students.forEach(element => {
+//             str+=`<li>${element.name}</li>`
+//         });
+//         document.getElementById('students').innerHTML=str
+//         console.log("fetched")
+//     },1000);
+// }
+// newStudent={name:"Potu",Subject:"Computer Science Fundamentals"}
+// enrollstudent(newStudent);
+// let viki=getstudent;
+// viki();
+// function func1() {
+    // // return new Promise(function(resolve, reject){
+        // setTimeout(() => {
+            // const error=false;
+            // if(!error)
+            // {
+            // // console.log("Promise Resolved")
+            // resolve("Yes");}
+            // else{
+            // //    console.log("Promise not Resolved")
+            //    reject("not")
+            // }
+        // }, 2000);
+    // })
+// }
+// func1().then(function(success){
+    // // console.log("thanks for resolving"+success)
+// }).catch(function(error){
+    // console.log("Mar li bro"+error)
+// })
+//  function getdata(){
+//      console.log("inside getdata")
+//      fetch("viki.txt").then((response)=>{
+//          console.log("inside 1st then")
+//          return response.text();
+//      }).then((data)=>{
+//          console.log("inside 2nd then")
+//          console.log(data);
+//      })
+//  }
+// function getdata(){
+//     console.log("inside getdata")
+//     fetch("https://api.github.com/users").then((response)=>{
+//         console.log("inside 1st then")
+//         return response.json();
+//     }).then((data)=>{
+//         console.log("inside 2nd then")
+//         console.log(data);
+//     })
+// }
+// function postdata(){
+//     data= '{"name":"testhdkjdkjhsdjk","salary":"123","age":"23"}'
+//     params={
+//         method: 'POST',
+//         headers: {
+//             'Content-Type' : 'application/json',
+//             'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8'
+//         },
+//         body: data
+//     }
+//     url="http://dummy.restapiexample.com/api/v1/create"
+//     fetch(url,params).then(response=>response.json())
+//     .then(data=>console.log(data))
+// }
+
+// //  getdata();
+// postdata();
+
+// let myBtn=document.getElementById('myBtn')
+//  let content=document.getElementById('content')
+//  async function viki(){
+//      return "viki";
+//  }
+//  a=viki();
+//  console.log(a);
+// try {
+
+//     Viki()
+// } catch (error) {
+// console.log(error)    
+// } finally{
+//     console.log("finally")
+// }
+// throw new Error("this is undefined")
 window.onload = js;
 
-function js() {
+ function js() {
+     obj= [1,2,3,4,5]
+     for (const iterator in obj) {
+         console.log(iterator)
+     }
 }
