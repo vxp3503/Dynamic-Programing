@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int Count_the_subset_with_given_sum(int arr[],int Sum,int n)
+int Count_the_subset_with_given_sum(int arr[],int n,int Sum)
 {
     int dp[n+1][Sum+1];
     for(int i=0;i<=n;i++)
@@ -22,6 +22,14 @@ int Count_the_subset_with_given_sum(int arr[],int Sum,int n)
             else
             dp[i][j]=dp[i-1][j];
         }
+    }
+    for(int i=0;i<=n;i++)
+    {
+        for(int j=0;j<=Sum;j++)
+        {
+            cout<<dp[i][j]<<" ";
+        }
+        cout<<endl;
     }
     return dp[n][Sum];
 }
