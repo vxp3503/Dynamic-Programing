@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-int coin_change_problem_minimum_number_of_ways(int coins[],int n,int amount)
+int coin_change_problem_maximum_number_of_ways(int coins[],int n,int amount)
 {
         int dp[n+1][amount+1];
         for(int i=0;i<=n;i++)
@@ -38,5 +38,5 @@ int main()
     cout<<"Enter the amount";
     int amount;
     cin>>amount;
-    cout<<coin_change_problem_minimum_number_of_ways(coins,n,amount);
+    cout<<coin_change_problem_maximum_number_of_ways(coins,n,amount);
 }
