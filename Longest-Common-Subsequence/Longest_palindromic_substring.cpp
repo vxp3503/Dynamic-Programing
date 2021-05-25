@@ -31,6 +31,7 @@ int LPstring(string text1)
         }
     }
     int max = 0;
+    int r,c;
     for (int i = 1; i <= n; i++)
     {
         for (int j = 1; j <= m; j++)
@@ -38,9 +39,29 @@ int LPstring(string text1)
             if (max <= dp[i][j])
             {
                 max = dp[i][j];
+                r=i;
+                c=j;
             }
         }
     }
+    for (int i = 0; i <= n; i++)
+    {
+        for (int j = 0; j <= m; j++)
+        {
+            cout<<dp[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+    cout<<r<<" "<<c<<endl;
+    string answer;
+        int p=0;
+    while(dp[r][c]!=0)
+    {
+        answer+=text2[r];
+        r--;
+        c--;
+    }
+    cout<<answer;
     return max;
 }
 int main()
